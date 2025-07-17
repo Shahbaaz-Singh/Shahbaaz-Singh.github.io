@@ -2,187 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jackarrow Games</title>
-
-  <!-- SEO -->
-  <meta name="description" content="Jackarrow Games is an indie game studio creating immersive 3D games and unforgettable experiences. Play. Feel. Remember.">
-  <meta name="keywords" content="Jackarrow Games, indie games, game studio, 3D games, Unity, Unreal Engine">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://jackarrowgames.com">
-
-  <!-- Social Media -->
-  <meta property="og:title" content="Jackarrow Games - Play. Feel. Remember.">
-  <meta property="og:description" content="We build 3D games that are not just played — they are felt and remembered.">
-  <meta property="og:image" content="https://jackarrowgames.com/assets/og-image.jpg">
-  <meta property="og:url" content="https://jackarrowgames.com">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Appearance -->
-  <meta name="theme-color" content="#000000">
-  <link rel="icon" type="image/png" href="logo.png" />
-
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      background: #000;
-      color: #fff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    nav {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      background: #000;
-      padding: 15px 0;
-      text-align: center;
-      z-index: 1000;
-      box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
-    }
-
-    nav a {
-      color: white;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1em;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ff4757;
-    }
-
-    section {
-      padding: 100px 20px 60px;
-      text-align: center;
-    }
-
-    #home img {
-      max-width: 200px;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      letter-spacing: 0.1em;
-      margin: 20px 0 10px;
-    }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 40px;
-    }
-
-    .gallery img {
-      width: 100%;
-      max-width: 300px;
-      border-radius: 12px;
-      object-fit: cover;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-      transition: transform 0.3s;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.03);
-    }
-
-    .video-wrapper {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-    }
-
-    iframe {
-      width: 90%;
-      max-width: 800px;
-      aspect-ratio: 16/9;
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
-
-    .founders {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 40px;
-      margin-top: 40px;
-    }
-
-    .founder {
-      max-width: 250px;
-      text-align: center;
-    }
-
-    .founder img {
-      width: 200px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
-    }
-
-
-    .founder p {
-      margin-top: 12px;
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-  </style>
+  <meta name="description" content="Jackarrow Games is an indie studio creating immersive 3D games.">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/logo.png" type="image/png" />
 </head>
 <body>
-
   <nav>
-    <a href="#home">Home</a>
-    <a href="#games">Games</a>
-    <a href="#about">About Us</a>
+    <div class="nav-logo">
+      <img src="assets/logo.png" alt="Jackarrow Games Logo" />
+      <span>Jackarrow Games</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="games.html">Games</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
   </nav>
 
-  <section id="home">
-    <img src="logo.png" alt="Jackarrow Games Logo">
+  <header class="hero">
     <h1>PLAY. FEEL. REMEMBER.</h1>
-  </section>
+    <p>Immersive 3D games crafted with passion.</p>
+  </header>
 
-  <section id="games">
-    <h1>Our Games</h1>
-    <div class="gallery">
-      <img src="Concept Art.png" alt="Concept Art">
-      <img src="Game.png" alt="Gameplay">
-      <img src="Thumbnail.PNG" alt="Game Thumbnail">
-    </div>
+  <section class="featured">
+    <h2>Featured Trailer</h2>
     <div class="video-wrapper">
       <iframe 
-        src="https://www.youtube.com/embed/2zAfwIg9r68?rel=0&modestbranding=1&autohide=1&showinfo=0" 
-        title="Gameplay Video"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
+        src="https://www.youtube.com/embed/2zAfwIg9r68?rel=0&modestbranding=1"
+        allowfullscreen
+        title="Alpha Gameplay">
       </iframe>
     </div>
   </section>
 
-  <section id="about">
-    <h1>About Us</h1>
-    <div class="founders">
-      <div class="founder">
-        <img src="Shahbaaz Singh.jpg" alt="Shahbaaz Singh">
-        <p><strong>Shahbaaz Singh</strong><br>Founder & Gameplay Programmer<br>IIT Madras & PEC</p>
-      </div>
-      <div class="founder">
-        <img src="Mehtaab Singh.jpg" alt="Mehtaab Singh">
-        <p><strong>Mehtaab Singh</strong><br>Founder & 3D Artist<br>Punjab University</p>
-      </div>
-    </div>
-  </section>
-
+  <footer>
+    &copy; 2025 Jackarrow Games
+  </footer>
 </body>
 </html>
