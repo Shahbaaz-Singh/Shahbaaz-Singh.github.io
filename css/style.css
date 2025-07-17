@@ -109,6 +109,17 @@ iframe {
   padding: 40px;
 }
 
+.founder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  max-width: 600px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+
 .founder img {
   width: 200px;
   height: 250px;
@@ -116,12 +127,18 @@ iframe {
   border-radius: 12px;
 }
 
+
 .founder p {
   text-align: center;
   margin-top: 10px;
   font-size: 1rem;
   line-height: 1.4;
 }
+
+.founder-info {
+  max-width: 350px;
+}
+
 
 footer {
   text-align: center;
