@@ -41,35 +41,122 @@
   
   <!-- Favicon (optional) -->
   <link rel="icon" type="image/png" href="logo.png">
-
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
-      background: black;
-      color: white;
+      background: #000;
+      color: #fff;
       font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 100vh;
-      padding-top: 40px;
-      box-sizing: border-box;
     }
-    img {
-      max-width: 350px;
-      margin-bottom: 0px;
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: #111;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+    #home img {
+      max-width: 300px;
     }
     h1 {
-      font-size: 3.5rem;
-      text-align: center;
-      margin: auto 0;
-      letter-spacing: 0.15em;
-      line-height: 1.3;
+      font-size: 3rem;
+      margin: 20px 0;
+      letter-spacing: 0.1em;
+    }
+    .gallery img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    video {
+      width: 90%;
+      max-width: 600px;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    .founders {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 30px;
+    }
+    .founder {
+      max-width: 250px;
+    }
+    .founder img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .founder p {
+      margin-top: 10px;
+      font-size: 1rem;
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="Logo" />
-  <h1>PLAY. FEEL. REMEMBER.</h1>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#games">Games</a>
+    <a href="#about">About Us</a>
+  </nav>
+
+  <section id="home">
+    <img src="logo.png" alt="Jackarrow Games Logo">
+    <h1>PLAY. FEEL. REMEMBER.</h1>
+  </section>
+
+  <section id="games">
+    <h1>Our Games</h1>
+    <div class="gallery">
+      <img src="Concept Art.png" alt="Art 1">
+      <img src="Game.png" alt="Art 2">
+      <img src="Thumbnail.PNG" alt="Art 3">
+    </div>
+  <iframe 
+    width="100%" 
+    height="400" 
+    src="https://www.youtube.com/embed/2zAfwIg9r68&t?rel=0&modestbranding=1&autohide=1&showinfo=0" 
+    title="Gameplay Video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+
+  </section>
+
+  <section id="about">
+    <h1>About Us</h1>
+    <div class="founders">
+      <div class="founder">
+        <img src="Shahbaaz Singh.jpg" alt="Founder 1">
+        <p><strong>Shahbaaz Singh</strong><br>Founder & Gameplay Programmer<br>IIT Madras & PEC</p>
+      </div>
+      <div class="founder">
+        <img src="Mehtaab Singh.jpg" alt="Founder 2">
+        <p><strong>Mehtaab Singh</strong><br>Founder & 3D Artist<br>[Background/Institute]</p>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
+
+    
