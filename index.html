@@ -1,112 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic Meta -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jackarrow Games</title>
-  
+
   <!-- SEO -->
   <meta name="description" content="Jackarrow Games is an indie game studio creating immersive 3D games and unforgettable experiences. Play. Feel. Remember.">
-  <meta name="keywords" content="Jackarrow Games, jackarrow games, jackarrow, games, jack arrow, jack arrow games, indie games, game development, 3D games, immersive gameplay, game studio, Unreal Engine, Unity, game mechanics, level design">
+  <meta name="keywords" content="Jackarrow Games, indie games, game studio, 3D games, Unity, Unreal Engine">
   <meta name="robots" content="index, follow">
-  <meta name="author" content="Jackarrow Games">
   <link rel="canonical" href="https://jackarrowgames.com">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:url" content="https://jackarrowgames.com">
-  <meta property="og:site_name" content="Jackarrow Games">
+
+  <!-- Social Media -->
   <meta property="og:title" content="Jackarrow Games - Play. Feel. Remember.">
-  <meta property="og:description" content="We build 3D games that are not just played — they are felt and remembered. Join our journey in indie game development.">
+  <meta property="og:description" content="We build 3D games that are not just played — they are felt and remembered.">
   <meta property="og:image" content="https://jackarrowgames.com/assets/og-image.jpg">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  
-  <!-- Twitter -->
+  <meta property="og:url" content="https://jackarrowgames.com">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@jackarrowgames">
-  <meta name="twitter:creator" content="@jackarrowgames">
-  <meta name="twitter:url" content="https://jackarrowgames.com">
-  <meta name="twitter:title" content="Jackarrow Games - Play. Feel. Remember.">
-  <meta name="twitter:description" content="Immersive indie games, unforgettable experiences. Explore the worlds of Jackarrow Games.">
-  <meta name="twitter:image" content="https://jackarrowgames.com/assets/og-image.jpg">
-  
-  <!-- Theme + Appearance -->
+
+  <!-- Appearance -->
   <meta name="theme-color" content="#000000">
-  <meta name="color-scheme" content="dark light">
-  
-  <!-- Favicon (optional) -->
-  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="icon" type="image/png" href="logo.png" />
+
   <style>
     html {
       scroll-behavior: smooth;
     }
+
     body {
       margin: 0;
       background: #000;
       color: #fff;
-      font-family: sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+
     nav {
       position: fixed;
       width: 100%;
       top: 0;
-      background: #000000;
-      padding: 10px 0;
+      background: #000;
+      padding: 15px 0;
       text-align: center;
-      z-index: 100;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
     }
+
     nav a {
       color: white;
       margin: 0 20px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       font-size: 1.1em;
+      transition: color 0.3s;
     }
+
+    nav a:hover {
+      color: #ff4757;
+    }
+
     section {
-      padding: 80px 20px;
+      padding: 100px 20px 60px;
       text-align: center;
     }
+
     #home img {
-      max-width: 300px;
+      max-width: 200px;
+      margin-bottom: 20px;
     }
+
     h1 {
       font-size: 3rem;
-      margin: 20px 0;
       letter-spacing: 0.1em;
+      margin: 20px 0 10px;
     }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
     .gallery img {
-      width: 300px;
-      margin: 10px;
-      border-radius: 10px;
+      width: 100%;
+      max-width: 300px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s;
     }
-    video {
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .video-wrapper {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    iframe {
       width: 90%;
-      max-width: 600px;
-      margin-top: 20px;
-      border-radius: 10px;
+      max-width: 800px;
+      aspect-ratio: 16/9;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     }
+
     .founders {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 40px;
-      margin-top: 30px;
+      margin-top: 40px;
     }
+
     .founder {
       max-width: 250px;
+      text-align: center;
     }
+
     .founder img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
     }
+
     .founder p {
-      margin-top: 10px;
+      margin-top: 12px;
       font-size: 1rem;
+      line-height: 1.5;
     }
   </style>
 </head>
@@ -126,31 +153,29 @@
   <section id="games">
     <h1>Our Games</h1>
     <div class="gallery">
-      <img src="Concept Art.png" alt="Art 1">
-      <img src="Game.png" alt="Art 2">
-      <img src="Thumbnail.PNG" alt="Art 3">
+      <img src="Concept Art.png" alt="Concept Art">
+      <img src="Game.png" alt="Gameplay">
+      <img src="Thumbnail.PNG" alt="Game Thumbnail">
     </div>
-  <iframe 
-    width="100%" 
-    height="400" 
-    src="https://www.youtube.com/embed/2zAfwIg9r68?rel=0&modestbranding=1&autohide=1&showinfo=0" 
-    title="Gameplay Video"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-
+    <div class="video-wrapper">
+      <iframe 
+        src="https://www.youtube.com/embed/2zAfwIg9r68?rel=0&modestbranding=1&autohide=1&showinfo=0" 
+        title="Gameplay Video"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
   </section>
 
   <section id="about">
     <h1>About Us</h1>
     <div class="founders">
       <div class="founder">
-        <img src="Shahbaaz Singh.jpg" alt="Founder 1">
+        <img src="Shahbaaz Singh.jpg" alt="Shahbaaz Singh">
         <p><strong>Shahbaaz Singh</strong><br>Founder & Gameplay Programmer<br>IIT Madras & PEC</p>
       </div>
       <div class="founder">
-        <img src="Mehtaab Singh.jpg" alt="Founder 2">
+        <img src="Mehtaab Singh.jpg" alt="Mehtaab Singh">
         <p><strong>Mehtaab Singh</strong><br>Founder & 3D Artist<br>Punjab University</p>
       </div>
     </div>
@@ -158,5 +183,3 @@
 
 </body>
 </html>
-
-    
