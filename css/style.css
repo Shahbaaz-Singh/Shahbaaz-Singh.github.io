@@ -136,3 +136,19 @@ main h1, main h2, section h1, section h2 {
   font-size: 2.4rem;
   margin-left:-500px;
 }
+.bio {
+  font-size: 0.95rem;
+  margin: 10px 0;
+  color: #ccc;
+}
+
+.social-links a {
+  color: #ff4757;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
