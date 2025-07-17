@@ -152,3 +152,14 @@ main h1, main h2, section h1, section h2 {
 .social-links a:hover {
   text-decoration: underline;
 }
+
+footer .social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer .social-icons a:hover {
+  color: #ff4757;
+}
+
